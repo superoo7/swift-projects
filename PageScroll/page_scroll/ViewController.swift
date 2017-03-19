@@ -5,6 +5,7 @@
 //  Created by Johnson Lai on 17/03/2017.
 //  Copyright © 2017 superoo7.com. All rights reserved.
 //
+// var test = "test"
 
 import UIKit
 
