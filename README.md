@@ -21,6 +21,9 @@
 	- added some iOS images
 	- minimal interface when BuyNowBtn pressed.
 
-### 4. Food Tracker
+### 4. stackview \[Done\]
+	This app uses stack view with preview of a few shoes.
+	- try out stack view of swift
     
-### 5.
+### 5. WordTrotter
+	This app will convert values between degrees Fahrenheit and degrees Celsius
