@@ -21,9 +21,15 @@
 	- added some iOS images
 	- minimal interface when BuyNowBtn pressed.
 
-### 4. stackview \[Done\]
+### 4. stackview1 \[Done\]
 	This app uses stack view with preview of a few shoes.
 	- try out stack view of swift
     
 ### 5. WordTrotter
 	This app will convert values between degrees Fahrenheit and degrees Celsius
+
+### 6. SwappingScreen
+	This app demo music app 
+	- try out swap screen
+
+
