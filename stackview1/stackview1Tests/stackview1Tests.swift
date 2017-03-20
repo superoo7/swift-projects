@@ -1,15 +1,15 @@
 //
-//  stackviewTests.swift
-//  stackviewTests
+//  stackview1Tests.swift
+//  stackview1Tests
 //
-//  Created by Johnson Lai on 19/03/2017.
+//  Created by Johnson Lai on 20/03/2017.
 //  Copyright © 2017 superoo7.com. All rights reserved.
 //
 
 import XCTest
-@testable import stackview
+@testable import stackview1
 
-class stackviewTests: XCTestCase {
+class stackview1Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

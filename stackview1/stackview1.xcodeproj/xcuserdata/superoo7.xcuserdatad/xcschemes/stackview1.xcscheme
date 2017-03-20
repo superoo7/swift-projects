@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C0D8A1021E7E7457006E0658"
-               BuildableName = "stackview.app"
-               BlueprintName = "stackview"
-               ReferencedContainer = "container:stackview.xcodeproj">
+               BlueprintIdentifier = "C03B42E01E7FA0FD00DDB021"
+               BuildableName = "stackview1.app"
+               BlueprintName = "stackview1"
+               ReferencedContainer = "container:stackview1.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C0D8A1161E7E7458006E0658"
-               BuildableName = "stackviewTests.xctest"
-               BlueprintName = "stackviewTests"
-               ReferencedContainer = "container:stackview.xcodeproj">
+               BlueprintIdentifier = "C03B42F41E7FA0FD00DDB021"
+               BuildableName = "stackview1Tests.xctest"
+               BlueprintName = "stackview1Tests"
+               ReferencedContainer = "container:stackview1.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C0D8A1211E7E7458006E0658"
-               BuildableName = "stackviewUITests.xctest"
-               BlueprintName = "stackviewUITests"
-               ReferencedContainer = "container:stackview.xcodeproj">
+               BlueprintIdentifier = "C03B42FF1E7FA0FD00DDB021"
+               BuildableName = "stackview1UITests.xctest"
+               BlueprintName = "stackview1UITests"
+               ReferencedContainer = "container:stackview1.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C0D8A1021E7E7457006E0658"
-            BuildableName = "stackview.app"
-            BlueprintName = "stackview"
-            ReferencedContainer = "container:stackview.xcodeproj">
+            BlueprintIdentifier = "C03B42E01E7FA0FD00DDB021"
+            BuildableName = "stackview1.app"
+            BlueprintName = "stackview1"
+            ReferencedContainer = "container:stackview1.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C0D8A1021E7E7457006E0658"
-            BuildableName = "stackview.app"
-            BlueprintName = "stackview"
-            ReferencedContainer = "container:stackview.xcodeproj">
+            BlueprintIdentifier = "C03B42E01E7FA0FD00DDB021"
+            BuildableName = "stackview1.app"
+            BlueprintName = "stackview1"
+            ReferencedContainer = "container:stackview1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C0D8A1021E7E7457006E0658"
-            BuildableName = "stackview.app"
-            BlueprintName = "stackview"
-            ReferencedContainer = "container:stackview.xcodeproj">
+            BlueprintIdentifier = "C03B42E01E7FA0FD00DDB021"
+            BuildableName = "stackview1.app"
+            BlueprintName = "stackview1"
+            ReferencedContainer = "container:stackview1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

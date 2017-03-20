@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C03B42D71E7F86F500DDB021 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03B42D61E7F86F500DDB021 /* ConversionViewController.swift */; };
 		C0D8A1411E7EBC28006E0658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8A1401E7EBC28006E0658 /* AppDelegate.swift */; };
 		C0D8A1431E7EBC28006E0658 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8A1421E7EBC28006E0658 /* ViewController.swift */; };
 		C0D8A1461E7EBC28006E0658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D8A1441E7EBC28006E0658 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C03B42D61E7F86F500DDB021 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		C0D8A13D1E7EBC28006E0658 /* WordTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D8A1401E7EBC28006E0658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0D8A1421E7EBC28006E0658 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				C0D8A1471E7EBC28006E0658 /* Assets.xcassets */,
 				C0D8A1491E7EBC28006E0658 /* LaunchScreen.storyboard */,
 				C0D8A14C1E7EBC28006E0658 /* Info.plist */,
+				C03B42D61E7F86F500DDB021 /* ConversionViewController.swift */,
 			);
 			path = WordTrotter;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0D8A1431E7EBC28006E0658 /* ViewController.swift in Sources */,
+				C03B42D71E7F86F500DDB021 /* ConversionViewController.swift in Sources */,
 				C0D8A1411E7EBC28006E0658 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +509,7 @@
 				C0D8A1671E7EBC28006E0658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0D8A1681E7EBC28006E0658 /* Build configuration list for PBXNativeTarget "WordTrotterTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				C0D8A16A1E7EBC28006E0658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0D8A16B1E7EBC28006E0658 /* Build configuration list for PBXNativeTarget "WordTrotterUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				C0D8A16D1E7EBC28006E0658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
