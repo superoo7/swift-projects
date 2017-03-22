@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					C070128C1E7C06F80062CB05 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X27TAC5Y26;
 						ProvisioningStyle = Automatic;
 					};
 					C07012A01E7C06F90062CB05 = {
@@ -412,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X27TAC5Y26;
 				INFOPLIST_FILE = page_scroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.superoo7.page-scroll";
@@ -424,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X27TAC5Y26;
 				INFOPLIST_FILE = page_scroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.superoo7.page-scroll";
@@ -505,6 +508,7 @@
 				C07012B71E7C06F90062CB05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C07012B81E7C06F90062CB05 /* Build configuration list for PBXNativeTarget "page_scrollTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +517,7 @@
 				C07012BA1E7C06F90062CB05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C07012BB1E7C06F90062CB05 /* Build configuration list for PBXNativeTarget "page_scrollUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +526,7 @@
 				C07012BD1E7C06F90062CB05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
