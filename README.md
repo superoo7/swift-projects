@@ -32,7 +32,12 @@
 	This app demo music app 
 	- try out swap screen
 
-
+### 7. RetroCalculator
+	This is a basic calculator app that can do multiply, division, addition and subtraction.
+	- use of sound when button pressed
+	- learn to use btn logic
+	- learn basic operator to create an calculator app
+	- learn to create launch screen
 
 
 
