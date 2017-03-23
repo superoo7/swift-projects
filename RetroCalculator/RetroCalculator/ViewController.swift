@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         } catch let err as NSError {
         print(err.debugDescription)
         }
+        
     }
     
     @IBAction func numberPressed(sender: UIButton) {
@@ -66,6 +67,16 @@ class ViewController: UIViewController {
         processOperation(operation: currentOperation)
     }
     
+    @IBAction func onClearPressed(sender: UIButton!) {
+        playSound()
+        
+        leftValStr = ""
+        rightValStr = ""
+        runningNumber = ""
+        currentOperation = Operation.Empty
+        outputLbl.text = "0"
+    }
+    
     func playSound() {
         if btnSound.isPlaying {
             btnSound.stop()
@@ -74,15 +85,16 @@ class ViewController: UIViewController {
     }
     
     func processOperation(operation: Operation) {
+        playSound()
         // if We have pressed one of the operator keys
         if currentOperation != Operation.Empty {
-            // if We have pressed one of the number keys
+        // if We have pressed one of the number keys
             if runningNumber != "" {
-                rightValStr = runningNumber
-                runningNumber = ""
+                    rightValStr = runningNumber
+                    runningNumber = ""
                 
                 if currentOperation == Operation.Multiply {
-                    result = "\(Double(leftValStr)! * Double(rightValStr)!)"
+                        result = "\(Double(leftValStr)! * Double(rightValStr)!)"
                 } else if currentOperation == Operation.Divide {    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
                     
                 } else if currentOperation == Operation.Subtract {  result = "\(Double(leftValStr)! - Double(rightValStr)!)"
@@ -90,19 +102,20 @@ class ViewController: UIViewController {
                 } else if currentOperation == Operation.Add {
                         result = "\(Double(leftValStr)! + Double(rightValStr)!)"
                 }
-                leftValStr = result
-                outputLbl.text = result
+            leftValStr = result
+            outputLbl.text = result
                 
-            }
-            currentOperation = operation
+        }
+        currentOperation = operation
         } else {
-            // This is when first time when operator being pressed
+                // This is when first time when operator being pressed
+            
             leftValStr = runningNumber
             runningNumber = ""
             currentOperation = operation
+
         }
+        
     }
-    
-    
 }
 
