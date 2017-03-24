@@ -199,7 +199,7 @@
 				TargetAttributes = {
 					C0FB8AE91E82B93300F4AEF4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = X27TAC5Y26;
+						DevelopmentTeam = V548K946KK;
 						ProvisioningStyle = Automatic;
 					};
 					C0FB8AFD1E82B93300F4AEF4 = {
@@ -423,11 +423,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X27TAC5Y26;
+				DEVELOPMENT_TEAM = V548K946KK;
 				INFOPLIST_FILE = RetroCalculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.superoo7.RetroCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnsonlwh7.RetroCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -437,11 +437,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X27TAC5Y26;
+				DEVELOPMENT_TEAM = V548K946KK;
 				INFOPLIST_FILE = RetroCalculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.superoo7.RetroCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnsonlwh7.RetroCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

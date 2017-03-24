@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C03B42D71E7F86F500DDB021 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03B42D61E7F86F500DDB021 /* ConversionViewController.swift */; };
 		C0D8A1411E7EBC28006E0658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8A1401E7EBC28006E0658 /* AppDelegate.swift */; };
-		C0D8A1431E7EBC28006E0658 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8A1421E7EBC28006E0658 /* ViewController.swift */; };
 		C0D8A1461E7EBC28006E0658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D8A1441E7EBC28006E0658 /* Main.storyboard */; };
 		C0D8A1481E7EBC28006E0658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0D8A1471E7EBC28006E0658 /* Assets.xcassets */; };
 		C0D8A14B1E7EBC28006E0658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D8A1491E7EBC28006E0658 /* LaunchScreen.storyboard */; };
@@ -38,7 +37,6 @@
 		C03B42D61E7F86F500DDB021 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		C0D8A13D1E7EBC28006E0658 /* WordTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D8A1401E7EBC28006E0658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0D8A1421E7EBC28006E0658 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0D8A1451E7EBC28006E0658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0D8A1471E7EBC28006E0658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0D8A14A1E7EBC28006E0658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				C0D8A1401E7EBC28006E0658 /* AppDelegate.swift */,
-				C0D8A1421E7EBC28006E0658 /* ViewController.swift */,
 				C0D8A1441E7EBC28006E0658 /* Main.storyboard */,
 				C0D8A1471E7EBC28006E0658 /* Assets.xcassets */,
 				C0D8A1491E7EBC28006E0658 /* LaunchScreen.storyboard */,
@@ -196,6 +193,7 @@
 				TargetAttributes = {
 					C0D8A13C1E7EBC28006E0658 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V548K946KK;
 						ProvisioningStyle = Automatic;
 					};
 					C0D8A1501E7EBC28006E0658 = {
@@ -262,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0D8A1431E7EBC28006E0658 /* ViewController.swift in Sources */,
 				C03B42D71E7F86F500DDB021 /* ConversionViewController.swift in Sources */,
 				C0D8A1411E7EBC28006E0658 /* AppDelegate.swift in Sources */,
 			);
@@ -416,9 +413,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V548K946KK;
 				INFOPLIST_FILE = WordTrotter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.superoo7.WordTrotter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnsonlwh7.WordTrotter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -428,9 +427,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V548K946KK;
 				INFOPLIST_FILE = WordTrotter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.superoo7.WordTrotter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnsonlwh7.WordTrotter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
