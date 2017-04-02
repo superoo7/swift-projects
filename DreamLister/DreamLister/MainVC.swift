@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
-class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
+    // NSFetchedResultsControllerDelegate work directly with CoreData and table view to fetched result that come back easily
     @IBOutlet weak var segment: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
 
