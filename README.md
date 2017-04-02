@@ -45,6 +45,12 @@
 	- embedded YouTube in the app
 	- run images on background
 
+### 9. Bullseye
+
+### 10. DreamLister
+	This app features core data in iOS
+
+
 
 #### Reference:
 
