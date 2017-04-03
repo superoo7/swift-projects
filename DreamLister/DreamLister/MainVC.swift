@@ -11,6 +11,9 @@ import CoreData
 
 class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
     // NSFetchedResultsControllerDelegate work directly with CoreData and table view to fetched result that come back easily
+    
+    var controller: NSFetchedResultsController<Item>!
+    
     @IBOutlet weak var segment: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
 
@@ -32,5 +35,24 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     func numberOfSections(in tableView: UITableView) -> Int {
         return 0
     }
+    
+    func attemptFetch() {
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
+        let dateSort = NSSortDescriptor(key: "created", ascending: false)
+        fetchRequest.sortDescriptors = [dateSort]
+        let controller =  NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        do {
+            try controller.performFetch()
+        } catch {
+            let error =  error as NSError
+            print("\(error)")
+        }
+        
+    }
+
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        <#code#>
+    }
+    
 }
 
