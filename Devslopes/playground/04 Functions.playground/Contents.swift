@@ -30,7 +30,7 @@ var area3 = length3 * width3
 // -> return type
 func calculateArea(length: Int, width: Int) -> Int {
     return length * width ;
-
+    
 }
 
 let newArea = calculateArea(length: 5, width: 6)
@@ -40,20 +40,34 @@ let newArea2 = calculateArea(length: 3, width: 2)
 var bankAccountBalance = 500.00
 var shoe = 350.00
 
-func purchaseItem(currentBalance: Double, itemPrice: Double) {
+
+// Approach 1
+
+//func purchaseItem(currentBalance:  Double, itemPrice: Double) -> Double {
+//    if itemPrice <= currentBalance {
+//        print("Purchased item for: $\(itemPrice)")
+//        return currentBalance - itemPrice
+//    } else {
+//        print("You are broke!")
+//        return currentBalance
+//    }
+//}
+//
+//print("Test")
+//bankAccountBalance = purchaseItem(currentBalance: bankAccountBalance, itemPrice: shoe)
+//
+//
+
+
+func purchaseItem(currentBalance: inout Double, itemPrice: Double){
     if itemPrice <= currentBalance {
         print("Purchased item for: $\(itemPrice)")
-        return currentBalance - itemPrice;
+        currentBalance = currentBalance - itemPrice
     } else {
         print("You are broke!")
-        return currentBalance
     }
 }
 
-
-bankAccountBalance = purchaseItem(currentBalance: bankAccountBalance, itemPrice: shoe)
-
-
-
+purchaseItem(currentBalance: &bankAccountBalance, itemPrice: shoe)
 
 
