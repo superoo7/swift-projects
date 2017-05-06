@@ -2,6 +2,7 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
+import PlaygroundSupport
 
 // Functional Programming
 // create a function that can repeat operations in a mathematical sense. They dont do a whole bunch of things and manipulate all kinds of data. They do one thing and they do well
