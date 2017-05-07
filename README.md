@@ -1,6 +1,11 @@
 # Learn iOS Development
 ## Try Hard mode :D
 
+## TODO
+* Prototocol Oriented Programming
+* Core Data
+* FireBase
+*
 
 #### Reference:
 
