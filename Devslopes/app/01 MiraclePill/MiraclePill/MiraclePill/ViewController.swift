@@ -12,6 +12,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     @IBOutlet weak var statePicker: UIPickerView!
     @IBOutlet weak var statePickerBtn: UIButton!
+    @IBOutlet weak var buyNowBtn: UIButton!
     
     let states = ["Alor Gajah", "Ayer Keroh", "Bukit Baru", "Bukit Beruang", "Melaka Raya", "Paya Ikan", "Tebong"]
     
@@ -52,5 +53,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         statePicker.isHidden = true
     }
 
+    @IBAction func buyNowBtnPressed(_ sender: Any) {
+    }
 }
 
