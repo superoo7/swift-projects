@@ -39,13 +39,15 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APk-s6-KTf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="57.5" y="0.0" width="260" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="8QL-XP-aZA"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="APk-s6-KTf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0EP-u9-L2C"/>
-                            <constraint firstAttribute="trailing" secondItem="APk-s6-KTf" secondAttribute="trailing" id="2bk-lA-lMh"/>
+                            <constraint firstItem="APk-s6-KTf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="16e-Xw-PuK"/>
                             <constraint firstItem="1gM-Jf-ffH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4f7-rL-TRu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="APk-s6-KTf" secondAttribute="bottom" id="542-HY-fVg"/>
                             <constraint firstAttribute="trailing" secondItem="fIY-S8-W0I" secondAttribute="trailing" constant="20" id="7aP-1o-S3C"/>
