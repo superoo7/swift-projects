@@ -46,6 +46,7 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="APk-s6-KTf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="16e-Xw-PuK"/>
                             <constraint firstItem="1gM-Jf-ffH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4f7-rL-TRu"/>
@@ -60,12 +61,17 @@
                             <constraint firstItem="fIY-S8-W0I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="rcL-EH-pYd"/>
                             <constraint firstItem="8rX-ss-cb9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xdc-fC-pDg"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3Ny-R5-UQu" appends="YES" id="OBF-u2-R7S"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="gestureRecognizer" destination="3Ny-R5-UQu" id="kmJ-1U-hod"/>
                         <outlet property="scrollView" destination="APk-s6-KTf" id="cYs-9a-ha1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3Ny-R5-UQu" userLabel="Swipe"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>

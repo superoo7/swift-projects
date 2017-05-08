@@ -13,13 +13,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     var images = [UIImageView]()
     
+    @IBOutlet var gestureRecognizer: UIPanGestureRecognizer!
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
 
     override func viewDidAppear(_ animated: Bool) {
+        
+        view.addGestureRecognizer(scrollView.panGestureRecognizer)
+        
         var contentWidth: CGFloat = 0.0
         let scrollWidth = scrollView.frame.size.width
         
