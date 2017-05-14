@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var timer = Timer()
+    
+    @IBAction func cameraBtnPressed(_ sender: Any) {
+        timer.invalidate()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.processTimer), userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +25,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    func processTimer() {
+        
+    }
 
 }
 
