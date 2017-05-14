@@ -13,10 +13,11 @@ class ViewController: UIViewController {
     
     var btnSound: AVAudioPlayer!
     
+    @IBOutlet weak var outputLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let path = Bundle.main.path(forResource: "btn", ofType: "wav")
+        let path = Bundle.main.path(forResource: "InterfaceButtonDigital-06", ofType: "wav")
         let soundURL = URL(fileURLWithPath: path!)
         
         do {

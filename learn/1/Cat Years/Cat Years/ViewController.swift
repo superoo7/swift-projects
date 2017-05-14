@@ -13,8 +13,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var ageLabel: UILabel!
     @IBAction func submitBtnPressed(_ sender: Any) {
-        let ageInCatYears = Int(ageTextField.text!)! * 7
-        ageLabel.text = "\(ageInCatYears)"
+        var test: String? = ageTextField.text
+        if let ageNum: String = test! {
+            let ageInCatYears = Int(ageNum)! * 7
+            ageLabel.text = "\(ageInCatYears)"
+        } else {
+            print ("Invalid Input")
+            ageLabel.text = "X"
+        }
+        
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
