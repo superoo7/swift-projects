@@ -41,7 +41,31 @@ class ViewController: UIViewController, MKMapViewDelegate {
         annotation.coordinate = location
         
         map.addAnnotation(annotation)
+        
+        // ui long press gesture recognizer
+        let uilpgr = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.longpress(gestureRecognizer:)))
+        
+        uilpgr.minimumPressDuration = 2
+        
+        map.addGestureRecognizer(uilpgr)
+        
     }
+    
+    func longpress(gestureRecognizer: UIGestureRecognizer) {
+        let touchPoint = gestureRecognizer.location(in: self.map)
+        
+        let coordinate = map.convert(touchPoint, toCoordinateFrom: self.map)
+        
+        let annotation = MKPointAnnotation()
+        
+        annotation.coordinate = coordinate
+        
+        annotation.title = "New place"
+        annotation.subtitle = "Maybe here?"
+        
+        map.addAnnotation(annotation)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
