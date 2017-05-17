@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -63,7 +64,7 @@
                                                 </constraints>
                                                 <state key="normal" image="clear"/>
                                                 <connections>
-                                                    <action selector="numberPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mH0-Yy-oc4"/>
+                                                    <action selector="onClearPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrj-Vs-xOd"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -204,7 +205,7 @@
                                                 </constraints>
                                                 <state key="normal" image="add"/>
                                                 <connections>
-                                                    <action selector="numberPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WT8-rn-ZpC"/>
+                                                    <action selector="onAddPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFf-EO-3lD"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ev-00-q8n">
@@ -215,7 +216,7 @@
                                                 </constraints>
                                                 <state key="normal" image="subtract"/>
                                                 <connections>
-                                                    <action selector="numberPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ggN-dV-vA6"/>
+                                                    <action selector="onSubtractPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgy-a4-c4X"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -231,7 +232,7 @@
                                                 </constraints>
                                                 <state key="normal" image="multiply"/>
                                                 <connections>
-                                                    <action selector="numberPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ek6-0o-SvV"/>
+                                                    <action selector="onMultiplyPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EC9-IW-xPw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOp-9e-lPi">
@@ -242,7 +243,7 @@
                                                 </constraints>
                                                 <state key="normal" image="divide"/>
                                                 <connections>
-                                                    <action selector="numberPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RMs-B8-HEP"/>
+                                                    <action selector="onDividePressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mb5-0c-uj8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmD-yf-3yG">
@@ -253,7 +254,7 @@
                                                 </constraints>
                                                 <state key="normal" image="equal"/>
                                                 <connections>
-                                                    <action selector="numberPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCm-Fv-Ue8"/>
+                                                    <action selector="onEqualPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFy-yV-dit"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -264,11 +265,10 @@
                                     <constraint firstAttribute="height" constant="363" id="h8q-fV-Bep"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxs-El-Cvl">
-                                <rect key="frame" x="35" y="25" width="251" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxs-El-Cvl">
+                                <rect key="frame" x="34" y="19.5" width="251" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="Rvw-b0-8qZ"/>
-                                    <constraint firstAttribute="width" constant="251" id="c3t-Lj-EGP"/>
+                                    <constraint firstAttribute="width" constant="251" id="9rt-k0-DM4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Minecrafter" family="Minecrafter" pointSize="34"/>
                                 <nil key="textColor"/>
@@ -277,6 +277,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Nxs-El-Cvl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="19.5" id="0hF-TI-mSF"/>
                             <constraint firstAttribute="trailing" secondItem="dcL-5j-VLC" secondAttribute="trailing" id="1md-uv-m9B"/>
                             <constraint firstItem="LPS-xK-Uvr" firstAttribute="centerX" secondItem="j4b-4p-dL6" secondAttribute="centerX" id="5OC-CT-Z5K"/>
                             <constraint firstItem="dcL-5j-VLC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="98R-Na-Cmb"/>
@@ -287,9 +288,9 @@
                             <constraint firstItem="L6q-J5-4iQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VSF-YY-nc2"/>
                             <constraint firstItem="L6q-J5-4iQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="5" id="Vbj-2N-0j4"/>
                             <constraint firstAttribute="trailing" secondItem="WoX-7K-fwd" secondAttribute="trailing" id="iTL-sq-7ff"/>
-                            <constraint firstItem="Nxs-El-Cvl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iWI-Ee-6nc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dcL-5j-VLC" secondAttribute="bottom" id="jTR-yZ-qKE"/>
                             <constraint firstItem="j4b-4p-dL6" firstAttribute="top" secondItem="L6q-J5-4iQ" secondAttribute="bottom" constant="16" id="jUb-uH-0Rf"/>
+                            <constraint firstItem="Nxs-El-Cvl" firstAttribute="centerX" secondItem="L6q-J5-4iQ" secondAttribute="centerX" id="xB7-Nu-ljA"/>
                             <constraint firstItem="LPS-xK-Uvr" firstAttribute="centerY" secondItem="j4b-4p-dL6" secondAttribute="centerY" id="xtJ-4i-O7X"/>
                         </constraints>
                     </view>
