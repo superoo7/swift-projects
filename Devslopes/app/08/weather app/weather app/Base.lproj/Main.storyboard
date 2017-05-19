@@ -82,7 +82,7 @@
                                 <rect key="frame" x="0.0" y="300" width="414" height="436"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="SgA-QT-bas">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="SgA-QT-bas">
                                         <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SgA-QT-bas" id="bQX-kV-TFs">
@@ -136,7 +136,7 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.01176470588" green="0.76078431369999999" blue="0.63921568630000003" alpha="0.6525042808219178" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.086274509799999996" green="0.66274509800000003" blue="0.3411764706" alpha="0.34883347602739728" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="QQR-hd-cpc" secondAttribute="trailing" constant="20" id="2LV-Qm-LTb"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="QQR-hd-cpc" secondAttribute="bottom" constant="10" id="52r-dU-KKX"/>
@@ -148,6 +148,7 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="uF0-gj-Bxp" secondAttribute="bottom" constant="7" id="yVw-01-Lrp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
