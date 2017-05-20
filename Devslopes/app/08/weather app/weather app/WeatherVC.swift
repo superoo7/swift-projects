@@ -6,6 +6,9 @@
 //  Copyright © 2017 johnsonlwh7. All rights reserved.
 //
 
+// Weather API
+// https://openweathermap.org/current
+
 import UIKit
 
 class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -16,10 +19,17 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var currentWeatherTypeLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    var currentWeather = CurrentWeather()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        currentWeather.downloadWeatherDetails {
+            // Setup the UI to load downloaded data
+            
+        }
         
     }
     
