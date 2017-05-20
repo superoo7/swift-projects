@@ -54,7 +54,9 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                         let forecast = Forecast(weatherDict: obj)
                         self.forecasts.append(forecast)
                     } // for obj in list
-                    
+                    // delete today's forecast
+                    self.forecasts.remove(at: 0)
+                    self.tableView.reloadData()
                     
                 } // list
             } // dict
@@ -68,13 +70,19 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return forecasts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell {
+            let forecast = forecasts[indexPath.row]
+            cell.configureCell(forecast: forecast)
+            return cell
+        } else { // empty cell
+            return WeatherCell()
+        }
         
-        return cell
+        
     }
     
     func updateMainUI() {
