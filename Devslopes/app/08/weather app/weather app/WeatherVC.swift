@@ -10,6 +10,7 @@
 // https://openweathermap.org/current
 
 import UIKit
+import Alamofire
 
 class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var dateLabel: UILabel!
@@ -21,6 +22,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var currentWeather: CurrentWeather!
     var forecast: Forecast!
+    var forecasts = [Forecast]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,19 +30,37 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.dataSource = self
         
         currentWeather = CurrentWeather()
-        forecast = Forecast()
+        
         
         currentWeather.downloadWeatherDetails {
             // Setup the UI to load downloaded data
-            self.updateMainUI()
-        }
+            self.downloadForecastData {
+                self.updateMainUI()
+            } // forecast.downloadForecastData
+        }// currentWeather.downloadWeatherDetails
         
         
-    }
+    } // viewDidLoad()
     
-    func downloadForecastData(completed: DownloadComplete) {
-        
-    }
+    func downloadForecastData(completed: @escaping DownloadComplete) {
+        let forecastURL = URL(string: FORECAST_URL)!
+        Alamofire.request(forecastURL).responseJSON { response in
+            let result = response.result
+            
+            if let dict = result.value as? Dictionary<String, AnyObject> {
+                if let list = dict["list"] as? [Dictionary<String, AnyObject>] {
+                    
+                    for obj in list {
+                        let forecast = Forecast(weatherDict: obj)
+                        self.forecasts.append(forecast)
+                    } // for obj in list
+                    
+                    
+                } // list
+            } // dict
+            completed()
+        } // responseJSON
+    } // func downloadForecastData
     
     // we need 1 section
     func numberOfSections(in tableView: UITableView) -> Int {
