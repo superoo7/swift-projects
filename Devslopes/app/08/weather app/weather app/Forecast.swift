@@ -49,14 +49,14 @@ class Forecast {
         if let temp = weatherDict["temp"] as? Dictionary<String, AnyObject> {
             // minimum temp
             if let min = temp["min"] as? Double {
-                let kelvinToCelcius: Double = min - 273.0
+                let kelvinToCelcius: Double = Double(min  - 273).roundTo(places: 2)
                 self._lowTemp = String(kelvinToCelcius)
             } // min
             print(self._lowTemp);
             
             // maximum temp
             if let max = temp["max"] as? Double {
-                let kelvinToCelcius: Double = max - 273
+                let kelvinToCelcius: Double =  Double(max - 273).roundTo(places: 2)
                 self._highTemp = String(kelvinToCelcius)
             } // max
             print(self._highTemp);
@@ -98,3 +98,11 @@ extension Date {
         return dateFormatter.string(from: self)
     } // func
 } // extension Date
+
+extension Double {
+    /// Rounds the double to decimal places value
+    func roundTo(places:Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return (self * divisor).rounded() / divisor
+    }
+}
