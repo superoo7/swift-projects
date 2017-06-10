@@ -13,7 +13,7 @@ class FriendsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView?.background = UIColor.red
+        self.view.backgroundColor = UIColor.red
     }
 
 
