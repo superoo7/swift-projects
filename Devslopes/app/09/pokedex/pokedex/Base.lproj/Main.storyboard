@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="SFUIText.ttf">
+            <string>.SFUIText</string>
+        </array>
         <array key="pokemon.ttf">
             <string>PokemonSolidNormal</string>
         </array>
@@ -164,13 +167,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wV8-E5-Oaq">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ivysaur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buc-Aj-LMA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buc-Aj-LMA">
                                         <rect key="frame" x="107" y="20" width="200" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Qr4-yn-yxu"/>
                                             <constraint firstAttribute="width" constant="200" id="ab8-6p-FJS"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name=".SFUIText" family=".SF UI Text" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -181,6 +184,9 @@
                                             <constraint firstAttribute="width" constant="35" id="oMh-gY-ysv"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="kqD-Wh-Sg6" eventType="touchUpInside" id="579-FJ-7U4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98203152419999995" green="0.44169142839999997" blue="0.40667408700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -248,8 +254,8 @@
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The description is following Lorem Ipsum Lorem Ipsum Test test test test tseaq" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="odl-4W-uuH">
                                                         <rect key="frame" x="120" y="0.0" width="254" height="0.0"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -427,7 +433,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="attackLbl" destination="WoZ-d0-mIB" id="joo-8G-Ijo"/>
+                        <outlet property="currentEvoImg" destination="n3Q-RP-UQV" id="vcT-sE-N3c"/>
+                        <outlet property="defenseLbl" destination="7eK-Cl-14w" id="669-dR-Ulk"/>
+                        <outlet property="descriptionLbl" destination="odl-4W-uuH" id="3eq-sr-cGw"/>
+                        <outlet property="evoLbl" destination="BAA-yo-pvg" id="UXE-9W-SoA"/>
+                        <outlet property="heightLbl" destination="s0f-fN-PY4" id="LWC-MF-SMM"/>
+                        <outlet property="mainImg" destination="OUZ-cG-2ZU" id="wiT-xI-c6P"/>
                         <outlet property="nameLbl" destination="buc-Aj-LMA" id="GiM-qh-yrl"/>
+                        <outlet property="nextEvoImg" destination="XOc-jm-jRW" id="0fl-BB-39T"/>
+                        <outlet property="pokedexLbl" destination="iU4-R9-HHp" id="KkE-LB-Pfz"/>
+                        <outlet property="typeLbl" destination="XJt-FQ-w76" id="wet-Ii-PEt"/>
+                        <outlet property="weightLbl" destination="dJ7-Io-Qnf" id="589-Yd-F03"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GoQ-LD-ve6" userLabel="First Responder" sceneMemberID="firstResponder"/>
