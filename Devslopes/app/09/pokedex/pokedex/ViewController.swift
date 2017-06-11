@@ -13,6 +13,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     
     
+    @IBOutlet weak var musicBtn: UIButton!
     @IBOutlet weak var collection: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -35,6 +36,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         parsePokemonCSV()
         initAudio()
+        musicPlayer.pause()
+        musicBtn.alpha = 0.2
         
         // when tap outside the keyboard
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
