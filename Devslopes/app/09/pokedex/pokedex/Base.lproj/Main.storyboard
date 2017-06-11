@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="height" constant="65" id="dAI-f1-Fdl"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="FnH-Pt-K1s">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="FnH-Pt-K1s">
                                 <rect key="frame" x="0.0" y="65" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="w0w-vf-7Yq"/>
@@ -92,19 +92,19 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E0W-0h-nhL" secondAttribute="bottom" id="26h-r6-FwM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iAv-Mb-skC" secondAttribute="bottom" constant="20" id="2KW-iz-Syd"/>
                             <constraint firstItem="FnH-Pt-K1s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6Gj-f8-m4t"/>
                             <constraint firstAttribute="trailing" secondItem="E0W-0h-nhL" secondAttribute="trailing" id="9zg-ew-3NN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iAv-Mb-skC" secondAttribute="bottom" constant="20" id="BC8-VS-7Wa"/>
                             <constraint firstItem="rlz-Ez-dp6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BVB-hM-1Er"/>
                             <constraint firstItem="FnH-Pt-K1s" firstAttribute="top" secondItem="rlz-Ez-dp6" secondAttribute="bottom" id="BoS-Ey-Mxr"/>
                             <constraint firstAttribute="trailing" secondItem="rlz-Ez-dp6" secondAttribute="trailing" id="EOe-sV-EuR"/>
                             <constraint firstItem="E0W-0h-nhL" firstAttribute="top" secondItem="FnH-Pt-K1s" secondAttribute="bottom" id="KAx-EJ-Ycu"/>
                             <constraint firstAttribute="trailing" secondItem="FnH-Pt-K1s" secondAttribute="trailing" id="QGS-Nr-qCd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iAv-Mb-skC" secondAttribute="trailing" constant="20" id="R7S-bg-AwC"/>
-                            <constraint firstItem="iAv-Mb-skC" firstAttribute="top" secondItem="FnH-Pt-K1s" secondAttribute="bottom" constant="20" id="aAo-YB-s44"/>
+                            <constraint firstItem="iAv-Mb-skC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="36" id="UQb-yv-juC"/>
                             <constraint firstItem="rlz-Ez-dp6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ddy-5I-WzZ"/>
+                            <constraint firstAttribute="trailing" secondItem="iAv-Mb-skC" secondAttribute="trailing" constant="36" id="lYQ-bE-dtg"/>
                             <constraint firstItem="E0W-0h-nhL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rN7-Ff-gO4"/>
-                            <constraint firstItem="iAv-Mb-skC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="xMr-SM-M8G"/>
+                            <constraint firstItem="iAv-Mb-skC" firstAttribute="top" secondItem="FnH-Pt-K1s" secondAttribute="bottom" constant="20" id="zHK-Fr-STW"/>
                         </constraints>
                     </view>
                     <connections>
