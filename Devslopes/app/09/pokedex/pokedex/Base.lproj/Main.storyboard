@@ -61,7 +61,7 @@
                                     <constraint firstAttribute="height" constant="65" id="dAI-f1-Fdl"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="FnH-Pt-K1s">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="FnH-Pt-K1s">
                                 <rect key="frame" x="0.0" y="65" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="w0w-vf-7Yq"/>
@@ -141,11 +141,30 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="iAv-Mb-skC" id="nbo-aj-pSF"/>
+                        <outlet property="searchBar" destination="FnH-Pt-K1s" id="fN5-Pb-ZHZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="189.59999999999999" y="156.97151424287858"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UN6-QX-h0d">
+            <objects>
+                <viewController id="kqD-Wh-Sg6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kuc-0Z-5sL"/>
+                        <viewControllerLayoutGuide type="bottom" id="oCB-0o-HVp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FTh-Bm-1ga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GoQ-LD-ve6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="160"/>
         </scene>
     </scenes>
     <resources>
