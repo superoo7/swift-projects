@@ -164,9 +164,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PokemonDetailVC" {
-            if let detailVC = segue.destination as? PokemonDetailVC {
+            if let detailsVC = segue.destination as? PokemonDetailVC {
                 if let poke = sender as? Pokemon {
-                    detailVC.pokemon = poke
+                    detailsVC.pokemon = poke
                 }
             }
         }
