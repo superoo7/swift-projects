@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var valueLabel: UILabel!
 
+    var currentValue: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,11 +29,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
+        currentValue = lroundf(slider.value)
         print("\(slider.value)")
     }
     
     @IBAction func showAlert() {
-        let alert = UIAlertController(title: "Hello world", message: "This is my app", preferredStyle: .alert)
+        let message = "The value of the slider is: \(currentValue)"
+        
+        let alert = UIAlertController(title: "Hello world", message: message, preferredStyle: .alert)
         let action1 = UIAlertAction(title: "Awesome", style: .default, handler: nil)
         let action2 = UIAlertAction(title: "Cancel", style: .default, handler: nil)
         
